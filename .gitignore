@@ -10,5 +10,3 @@ rasaenvironment/
 .DS_Store
 .idea/
 .vscode/
-credentials.yml
-endpoints.yml

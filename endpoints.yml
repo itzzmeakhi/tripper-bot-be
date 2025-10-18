@@ -1,0 +1,2 @@
+action_endpoint:
+  url: "https://tripper-bot-be-1.onrender.com/webhook"
