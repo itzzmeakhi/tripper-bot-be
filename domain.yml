@@ -1,0 +1,85 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - bot_challenge
+  - find_destination
+  - search_hotels
+  - find_restaurants
+  - plan_itinerary
+  - provide_destination_type
+  - provide_location
+  - ask_weather
+
+entities:
+  - destination_type
+  - location
+
+slots:
+  destination_type:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: destination_type
+
+  location:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: location
+
+responses:
+  utter_greet:
+    - text: "👋 Hi! I'm TripperBot, your smart travel buddy!"
+  utter_goodbye:
+    - text: "Safe travels! Come back anytime for trip inspiration. 🌍"
+  utter_iamabot:
+    - text: "I'm TripperBot — your AI travel planner."
+  utter_ask_service:
+    - text: "What would you like to explore today?"
+      buttons:
+        - title: "🏖️ Find Destination"
+          payload: "/find_destination"
+        - title: "🏨 Search Hotels"
+          payload: "/search_hotels"
+        - title: "🍽️ Find Restaurants"
+          payload: "/find_restaurants"
+        - title: "☀️ Check Weather"
+          payload: "/ask_weather"
+  utter_ask_destination_type:
+    - text: "What type of destination are you looking for?"
+      buttons:
+        - title: "🏖️ Beach"
+          payload: '/provide_destination_type{{"destination_type":"beach"}}'
+        - title: "⛰️ Mountain"
+          payload: '/provide_destination_type{{"destination_type":"mountain"}}'
+        - title: "🎭 Cultural"
+          payload: '/provide_destination_type{{"destination_type":"cultural"}}'
+        - title: "🏙️ City"
+          payload: '/provide_destination_type{{"destination_type":"city"}}'
+  utter_ask_hotel_location:
+    - text: "Which city or destination would you like to find hotels in?"
+      buttons:
+        - title: "Goa"
+          payload: '/provide_location{{"location":"goa"}}'
+        - title: "Manali"
+          payload: '/provide_location{{"location":"manali"}}'
+        - title: "Jaipur"
+          payload: '/provide_location{{"location":"jaipur"}}'
+  utter_default:
+    - text: "I'm not sure I understood that. You can ask about destinations, hotels, restaurants, or weather."
+
+actions:
+  - action_recommend_destinations
+  - action_recommend_hotels
+  - action_recommend_restaurants
+  - action_get_weather
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

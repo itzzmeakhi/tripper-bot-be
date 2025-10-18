@@ -1,0 +1,42 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello there
+    - good morning
+    - hi Tripper
+
+- intent: find_destination
+  examples: |
+    - suggest a destination
+    - where should I go
+    - recommend places to visit
+    - show me tourist spots in India
+    - best places to visit in [Goa](location)
+    - cultural trips in [Jaipur](location)
+
+- intent: search_hotels
+  examples: |
+    - find hotels in [Goa](location)
+    - 5-star resorts in [Manali](location)
+    - budget hotels in [Kerala](location)
+    - best places to stay in [Jaipur](location)
+    - cheap hotels near [beach](destination_type)
+    - luxury stays in [Mumbai](location)
+
+- intent: find_restaurants
+  examples: |
+    - restaurants in [Goa](location)
+    - Indian food in [Jaipur](location)
+    - best cafes in [Manali](location)
+    - places to eat in [Kerala](location)
+    - where to eat Rajasthani food in [Jaipur](location)
+
+- intent: ask_weather
+  examples: |
+    - what's the weather in [Goa](location)
+    - tell me weather in [Kerala](location)
+    - is it hot in [Jaipur](location)
+    - show me temperature in [Manali](location)

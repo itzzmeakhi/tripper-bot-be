@@ -1,0 +1,42 @@
+version: "3.1"
+
+stories:
+- story: greet user
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_ask_service
+
+- story: find destination guided
+  steps:
+  - intent: find_destination
+  - action: utter_ask_destination_type
+  - intent: provide_destination_type
+  - action: action_recommend_destinations
+
+- story: hotel guided
+  steps:
+  - intent: search_hotels
+  - action: utter_ask_hotel_location
+  - intent: provide_location
+  - action: action_recommend_hotels
+
+- story: restaurant guided
+  steps:
+  - intent: find_restaurants
+  - action: action_recommend_restaurants
+
+- story: check weather
+  steps:
+  - intent: ask_weather
+  - action: action_get_weather
+
+- story: goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: bot challenge
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
