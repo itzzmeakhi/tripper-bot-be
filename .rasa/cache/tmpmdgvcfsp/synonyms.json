@@ -1,0 +1,22 @@
+{
+  "beach": "beach",
+  "mountain": "mountain",
+  "city": "city",
+  "cultural": "cultural",
+  "budget": "budget",
+  "moderate": "moderate",
+  "luxury": "luxury",
+  "short": "short",
+  "week": "week",
+  "extended": "extended",
+  "bali": "bali",
+  "paris": "paris",
+  "tokyo": "tokyo",
+  "barcelona": "barcelona",
+  "italian": "italian",
+  "chinese": "chinese",
+  "japanese": "japanese",
+  "indian": "indian",
+  "french": "french",
+  "mexican": "mexican"
+}

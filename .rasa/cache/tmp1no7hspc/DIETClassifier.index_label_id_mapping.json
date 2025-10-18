@@ -1,0 +1,17 @@
+{
+  "0": "affirm",
+  "1": "ask_weather",
+  "2": "bot_challenge",
+  "3": "deny",
+  "4": "find_destination",
+  "5": "find_restaurants",
+  "6": "goodbye",
+  "7": "greet",
+  "8": "plan_itinerary",
+  "9": "provide_budget",
+  "10": "provide_cuisine",
+  "11": "provide_destination_type",
+  "12": "provide_duration",
+  "13": "provide_location",
+  "14": "search_hotels"
+}

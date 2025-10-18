@@ -1,39 +1,14 @@
-# 🧠 Rasa local data
-*.db
-*.sqlite
-*.sqlite3
-*.log
-*.json
-
-# 🧠 Model and training cache (except final model)
-models/.rasa
-models/*.tmp
-models/old/
-.cache/
-
-# 🧰 Python environments
 venv/
 .env/
-rasaenvironment/
 __pycache__/
 *.pyc
-
-# 💾 Temporary Rasa training data
+.cache/
 results/
-rasa_core.log
-rasa_nlu.log
 events.db
-
-# 🧩 Jupyter notebooks or experiments
-*.ipynb
-notebooks/
-tests/
-
-# 🧑‍💻 System files
+*.log
+rasaenvironment/
 .DS_Store
 .idea/
 .vscode/
-
-# ⚠️ Credentials (keep a local copy only)
 credentials.yml
 endpoints.yml

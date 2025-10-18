@@ -1,0 +1,52 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-budget_level",
+      "2": "I-budget_level",
+      "3": "L-budget_level",
+      "4": "U-budget_level",
+      "5": "B-cuisine_type",
+      "6": "I-cuisine_type",
+      "7": "L-cuisine_type",
+      "8": "U-cuisine_type",
+      "9": "B-destination_type",
+      "10": "I-destination_type",
+      "11": "L-destination_type",
+      "12": "U-destination_type",
+      "13": "B-duration",
+      "14": "I-duration",
+      "15": "L-duration",
+      "16": "U-duration",
+      "17": "B-location",
+      "18": "I-location",
+      "19": "L-location",
+      "20": "U-location",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-budget_level": 1,
+      "I-budget_level": 2,
+      "L-budget_level": 3,
+      "U-budget_level": 4,
+      "B-cuisine_type": 5,
+      "I-cuisine_type": 6,
+      "L-cuisine_type": 7,
+      "U-cuisine_type": 8,
+      "B-destination_type": 9,
+      "I-destination_type": 10,
+      "L-destination_type": 11,
+      "U-destination_type": 12,
+      "B-duration": 13,
+      "I-duration": 14,
+      "L-duration": 15,
+      "U-duration": 16,
+      "B-location": 17,
+      "I-location": 18,
+      "L-location": 19,
+      "U-location": 20,
+      "O": 0
+    },
+    "num_tags": 21
+  }
+]
